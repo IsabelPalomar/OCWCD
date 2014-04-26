@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <context-param>
+        <description>Lorem ipsum, this is a context param</description>
+        <param-name>Context1</param-name>
+        <param-value>ParameterGral</param-value>
+    </context-param>
+    <context-param>
+        <description>Lorem ipsum</description>
+        <param-name>visualName</param-name>
+        <param-value>Working with context and servlet parameters</param-value>
+    </context-param>
+    <context-param>
+        <description>Lorem ipsum</description>
+        <param-name>version</param-name>
+        <param-value>1.0</param-value>
+    </context-param>
+    <servlet>
+        <servlet-name>HelloServlet</servlet-name>
+        <servlet-class>com.ipalomar.HelloServlet</servlet-class>
+        <init-param>
+            <param-name>Name</param-name>
+            <param-value>Isabel Palomar</param-value>
+        </init-param>
+        <init-param>
+            <description>Lorem Ipsum</description>
+            <param-name>Gender</param-name>
+            <param-value>Female</param-value>
+        </init-param>
+        <init-param>
+            <description>Lorem Ipsum
+</description>
+            <param-name>Ocuppation</param-name>
+            <param-value>Software Developer</param-value>
+        </init-param>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloServlet</servlet-name>
+        <url-pattern>/HelloServlet</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
